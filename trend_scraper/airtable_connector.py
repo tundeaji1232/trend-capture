@@ -16,7 +16,7 @@ def upload_to_airtable(trend_data):
         "Summary": trend_data.get("summary", ""),
         "Source": trend_data.get("source", ""),
         "URL": trend_data.get("url", ""),
-        "Tags": trend_data.get("tags", []),
+        "Tags": ", ".join(trend_data.get("tags", [])),  # ✅ Fix here
         "Category": trend_data.get("category", ""),
         "Published Date": trend_data.get("published_date", ""),
         "Scraped Date": trend_data.get("scraped_date", "")
