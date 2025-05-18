@@ -3,7 +3,7 @@ import os
 
 API_KEY = os.getenv("AIRTABLE_API_KEY")
 BASE_ID = os.getenv("AIRTABLE_BASE_ID")
-TABLE_NAME = "trend"
+TABLE_NAME = "tblSHn0HHUGnWqJhx"
 
 def upload_to_airtable(trend_data):
     headers = {
